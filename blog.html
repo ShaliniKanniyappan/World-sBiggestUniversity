@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width", initial-scale="1.0">
+    <title>University Website Design - Easy Tutorials</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"><img src="images/logo.png"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa-solid fa-xmark" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="course.html">COURSE</a></li>
+                    <li><a href="blog.html">BLOG</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fa-solid fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <h1>Our certificate & Online Programs for 2024</h1>
+    </section>
+    <!----Blog Page Content---->
+    <section class="blog-content">
+        <div class="row">
+            <div class="blog-left">
+                <img src="images/certificate.jpg">
+                <h2>Our certificate & Online Programs for 2024</h2>
+                <p>In 2024, our institution proudly presents an array of certificate and online programs tailored to meet the dynamic demands of the modern workforce and learners across diverse fields. These programs are meticulously crafted to offer comprehensive learning experiences, blending academic rigor with practical applicability. Whether aspiring professionals seek to upskill, reskill, or embark on a new educational journey, our offerings cater to a spectrum of interests and career pathways.</p><br>
+                <p>Our certificate programs are designed to provide specialized knowledge and skills, equipping individuals with industry-relevant expertise to excel in their chosen fields. From advanced technical certifications to leadership and management courses, each program is structured to empower learners with the tools they need to thrive in today's competitive job market. With a focus on flexibility and accessibility, these certificates are ideal for working professionals seeking to enhance their credentials or pivot into new roles.</p><br>
+                <p>Moreover, our online programs offer unparalleled convenience without compromising quality. Leveraging cutting-edge technology and pedagogical approaches, we deliver engaging and interactive learning experiences that transcend geographical boundaries. Whether pursuing a degree, certification, or simply pursuing personal enrichment, our online platform fosters a vibrant learning community where students can connect with peers and expert instructors. With a commitment to excellence and innovation, our 2024 offerings embody our dedication to shaping the future of education and empowering learners worldwide.</p><br>
+            <div class="comment-box">
+                <h3>Leave a comment</h3>
+                <form class="comment-form">
+                    <input type="text" placeholder="Enter Name">
+                    <input type="email" placeholder="Enter Email">
+                    <textarea rows="5" placeholder="Your Message" required></textarea>                       
+                    <button type="submit" class="hero-btn red-btn">POST COMMENT</button>
+                </form>
+            </div>
+            </div>
+            <div class="blog-right">
+                <h3>Post Categories</h3>
+                <div>
+                    <span>Business Analytics</span>
+                    <span>21</span>
+                </div>
+                <div>
+                    <span>Data Science</span>
+                    <span>28</span>
+                </div>
+                <div>
+                    <span>Machine Learning</span>
+                    <span>15</span>
+                </div>
+                <div>
+                    <span>Computer Scienece</span>
+                    <span>34</span>
+                </div>
+                <div>
+                    <span>AutoCAD</span>
+                    <span>42</span>
+                </div>
+                <div>
+                    <span>Journalism</span>
+                    <span>22</span>
+                </div>
+                <div>
+                    <span>Commerce</span>
+                    <span>30</span>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!----Footer---->
+    <section class="footer">
+        <h4>ABOUT US</h4>
+        <p>Lorem ipsum dolor sit amet,consectetur adipiscing elit.</p>
+        <div class="icons">
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-square-twitter"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-linkedin"></i>
+        </div>
+        <p>Made with <i class="fa-regular fa-heart"></i> by Easy Tutorials</p>
+    </section>
+    <!----JavaScript for Toggle Menu---->
+    <script>
+        var navLinks=document.getElementById("navLinks")
+        function showMenu(){
+            navLinks.style.right="0";
+        }
+        function hideMenu(){
+            navLinks.style.right="-200px";
+        }
+    </script>
+</body>
+</html>
